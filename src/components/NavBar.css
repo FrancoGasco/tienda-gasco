@@ -1,0 +1,15 @@
+ul{
+    width: 100% ;
+    height:auto;
+    display: flex ;
+    justify-content: space-aroud;
+    align-items:center;
+    background-color: black ; 
+} 
+li{
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke ;
+    font-size: 1.5rem;
+    
+} 
