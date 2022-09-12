@@ -1,16 +1,16 @@
 //Components
 import { NavBar } from './components/NavBar';
-import { ItemListContainer } from './containers/ItemListContainer';
+import  ItemDetailContainer  from './components/ItemDetailContainer';
 //Estilos
 import './App.css';
 
 
 function App(){
   return(
-    <div className="App">
+    <>
       <NavBar />
-      <ItemListContainer greeting = "Hola Mundo"/>
-    </div>
+      <ItemDetailContainer/>
+    </>
   ) ;
 }
 
