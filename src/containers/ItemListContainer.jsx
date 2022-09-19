@@ -1,11 +1,10 @@
 import React , {useState, useEffect} from "react";
-import { ItemCount } from "./ItemCount";
 import ItemList from "./ItemList";
 import './ItemListContainer.css'
 import { useParams } from "react-router-dom";
 
 
-export const ItemListContainer = ({greeting}) =>{
+export const ItemListContainer = ({texto}) =>{
     
     const[data, setData] = useState([]);
 
@@ -26,16 +25,11 @@ export const ItemListContainer = ({greeting}) =>{
 
     }, [categoriaId])
 
-    const handleAdd = () =>{
-        console.log("Se agrego al carrito")
-    }
 
     return(
         <>
         
-        <div className="greeting">{greeting}</div>
-        
-        <ItemCount handleAdd={handleAdd} initialStock={10}/>
+        <Title greeting={texto}/>
         <ItemList data={data}/>
         
         </>
