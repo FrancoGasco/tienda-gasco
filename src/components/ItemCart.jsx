@@ -1,5 +1,5 @@
 import React from "react";
-import { useCartContext } from "../CartContext";
+import { useCartContext } from '../CartContext';
 import './itemCart.css'
 
 const ItemCart = ({ product }) => {
@@ -18,4 +18,4 @@ const ItemCart = ({ product }) => {
     )
 }
 
-export default ItemCart
+export default ItemCart;
